@@ -22,10 +22,12 @@ public class activity_form_finish extends AppCompatActivity {
         Intent mIntent = getIntent();
 
         if (mIntent!=null){
-            ff_useer.setText(mIntent.getStringExtra(AppConstants.TEXT_USER));
-            ff_pass.setText(mIntent.getStringExtra(AppConstants.TEXT_PASS));
-            ff_email.setText(mIntent.getStringExtra(AppConstants.TEXT_EMAIL));
-            ff_gender.setText(mIntent.getStringExtra(AppConstants.TEXT_GENDER));
+
+            ff_useer.setText(mIntent.getStringExtra(Intent.EXTRA_TEXT));
+            ff_pass.setText(mIntent.getStringExtra(Intent.EXTRA_TEXT));
+            ff_email.setText(mIntent.getStringExtra(Intent.EXTRA_TEXT));
+            ff_gender.setText(mIntent.getStringExtra(Intent.EXTRA_TEXT));
+
         }
 
     }
