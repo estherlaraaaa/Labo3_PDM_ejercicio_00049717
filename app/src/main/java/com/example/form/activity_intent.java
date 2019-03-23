@@ -39,10 +39,10 @@ public class activity_intent extends AppCompatActivity {
             shareIntent.setType("text/plain");
             shareIntent.setAction(Intent.ACTION_SEND);
 
-            shareIntent.putExtra(Intent.EXTRA_TEXT, tv_user.getText().toString());
-            shareIntent.putExtra(Intent.EXTRA_TEXT, tv_pass.getText().toString());
-            shareIntent.putExtra(Intent.EXTRA_TEXT, tv_email.getText().toString());
-            shareIntent.putExtra(Intent.EXTRA_TEXT, tv_gender.getText().toString());
+            shareIntent.putExtra(AppConstants.TEXT_USER, tv_user.getText().toString());
+            shareIntent.putExtra(AppConstants.TEXT_PASS, tv_pass.getText().toString());
+            shareIntent.putExtra(AppConstants.TEXT_EMAIL, tv_email.getText().toString());
+            shareIntent.putExtra(AppConstants.TEXT_GENDER, tv_gender.getText().toString());
 
             startActivity(shareIntent);
         });
