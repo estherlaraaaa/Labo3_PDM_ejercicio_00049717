@@ -19,22 +19,25 @@
         android:id="@+id/user"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
-        android:hint="Username"
-        android:textSize="24sp" />
+        android:hint="@string/user"
+        android:textSize="24sp"
+        android:textColor="@color/colorText"/>
 
     <EditText
         android:id="@+id/pass"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
-        android:hint="Password"
-        android:textSize="24sp" />
+        android:hint="@string/pass"
+        android:textSize="24sp"
+        android:textColor="@color/colorText"/>
 
     <EditText
         android:id="@+id/email"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
-        android:hint="Email"
-        android:textSize="24sp" />
+        android:hint="@string/email"
+        android:textSize="24sp"
+        android:textColor="@color/colorText"/>
 
     <RadioGroup
         android:id="@+id/fm_gender"
@@ -49,14 +52,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="Male"
+            android:text="@string/boy"
             android:padding="15dp"/>
 
         <RadioButton
             android:id="@+id/female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Female"
+            android:text="@string/girl"
             android:padding="15dp"/>
     </RadioGroup>
 

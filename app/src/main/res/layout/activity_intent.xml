@@ -22,32 +22,36 @@
         android:layout_width="313dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Username: "
-        android:textSize="30sp" />
+        android:text="@string/user"
+        android:textSize="30sp"
+        android:textColor="@color/colorText"/>
 
     <TextView
         android:id="@+id/tv_pass"
         android:layout_width="313dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Password: "
-        android:textSize="30sp" />
+        android:text="@string/pass"
+        android:textSize="30sp"
+        android:textColor="@color/colorText"/>
 
     <TextView
         android:id="@+id/tv_email"
         android:layout_width="313dp"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:text="Email: "
-        android:layout_margin="10dp"/>
+        android:text="@string/email"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorText"/>
 
     <TextView
         android:id="@+id/tv_gender"
         android:layout_width="313dp"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:text="Gender: "
-        android:layout_margin="10dp"/>
+        android:text="@string/gender"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorText"/>
 
     <Button
         android:id="@+id/tv_share"
@@ -55,6 +59,7 @@
         android:layout_height="wrap_content"
         android:text="SHARE"
         android:background="@color/colorSend"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:textColor="@color/colorText"/>
 
 </LinearLayout>
