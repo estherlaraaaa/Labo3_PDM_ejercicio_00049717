@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.form.utilities.AppConstants;
+
 public class activity_intent extends AppCompatActivity {
 
     private TextView tv_user, tv_pass, tv_email, tv_gender;
