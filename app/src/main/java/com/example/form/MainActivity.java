@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText user, pass, email;
     private RadioGroup fm_gender;
-    private RadioButton mf;
+    private RadioButton mf_gender;
     private Button btn_send;
 
     @Override
@@ -34,15 +34,13 @@ public class MainActivity extends AppCompatActivity {
         btn_send.setOnClickListener(v->{
 
             int idRadio = fm_gender.getCheckedRadioButtonId();
-            mf = findViewById(idRadio);
+            mf_gender = findViewById(idRadio);
 
-            Intent mIntent = new Intent(this, activity_intent.class);
+            Intent mIntent = new Intent(MainActivity.this, activity_intent.class);
             mIntent.putExtra(AppConstants.TEXT_USER, user.getText().toString());
             mIntent.putExtra(AppConstants.TEXT_PASS, pass.getText().toString());
             mIntent.putExtra(AppConstants.TEXT_EMAIL, email.getText().toString());
-            mIntent.putExtra(AppConstants.TEXT_GENDER, mf.getText().toString());
-
-
+            mIntent.putExtra(AppConstants.TEXT_GENDER, mf_gender.getText().toString());
 
             startActivity(mIntent);
         });

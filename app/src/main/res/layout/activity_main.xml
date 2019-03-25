@@ -5,31 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PROFILE"
-        android:textSize="50sp"
-        android:textColor="@color/colorProfile"/>
+        android:textSize="35sp"
+        android:textColor="@color/colorProfile"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:textSize="15sp"/>
 
     <EditText
         android:id="@+id/user"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:hint="@string/user"
-        android:textSize="24sp"
+        android:textSize="10sp"
         android:textColor="@color/colorText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password: "
+        android:textSize="15sp"/>
 
     <EditText
         android:id="@+id/pass"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:hint="@string/pass"
-        android:textSize="24sp"
-        android:textColor="@color/colorText"/>
+        android:textSize="10sp"
+        android:textColor="@color/colorText"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="15sp"/>
 
     <EditText
         android:id="@+id/email"
@@ -38,6 +57,12 @@
         android:hint="@string/email"
         android:textSize="24sp"
         android:textColor="@color/colorText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender: "
+        android:textSize="10sp"/>
 
     <RadioGroup
         android:id="@+id/fm_gender"
@@ -53,14 +78,14 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/boy"
-            android:padding="15dp"/>
+            android:padding="10dp"/>
 
         <RadioButton
             android:id="@+id/female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/girl"
-            android:padding="15dp"/>
+            android:padding="10dp"/>
     </RadioGroup>
 
     <Button
@@ -68,9 +93,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SEND"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:background="@color/colorSend"
-        android:textColor="@color/colorLetter"/>
+        android:textColor="@color/colorLetter"
+        android:layout_gravity="center"/>
 
 
 </LinearLayout>

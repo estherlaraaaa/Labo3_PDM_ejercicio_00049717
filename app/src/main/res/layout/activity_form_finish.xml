@@ -18,60 +18,11 @@
         android:layout_margin="10dp"/>
 
     <TextView
+        android:id="@+id/tv_information"
         android:layout_width="313dp"
         android:layout_height="wrap_content"
-        android:text="@string/user"
+        android:text=""
         android:textColor="@color/colorText"/>
-
-    <TextView
-        android:id="@+id/ff_user"
-        android:layout_width="313dp"
-        android:layout_height="wrap_content"
-        android:text="@string/user"
-        android:layout_margin="10dp"
-        android:textSize="30sp" />
-
-    <TextView
-        android:layout_width="313dp"
-        android:layout_height="wrap_content"
-        android:text="@string/pass"
-        android:textColor="@color/colorText"/>
-
-    <TextView
-        android:id="@+id/ff_pass"
-        android:layout_width="313dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="@string/pass"
-        android:textSize="30sp" />
-
-    <TextView
-        android:layout_width="313dp"
-        android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:textColor="@color/colorText"/>
-
-    <TextView
-        android:id="@+id/ff_email"
-        android:layout_width="313dp"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="@string/email"
-        android:layout_margin="10dp" />
-
-    <TextView
-        android:layout_width="313dp"
-        android:layout_height="wrap_content"
-        android:text="@string/gender"
-        android:textColor="@color/colorText"/>
-
-    <TextView
-        android:id="@+id/ff_gender"
-        android:layout_width="313dp"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="@string/gender"
-        android:layout_margin="10dp" />
 
 
 </LinearLayout>

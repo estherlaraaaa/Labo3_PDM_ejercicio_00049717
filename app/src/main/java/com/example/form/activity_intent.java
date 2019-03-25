@@ -36,13 +36,15 @@ public class activity_intent extends AppCompatActivity {
 
         tv_share.setOnClickListener(v ->{
             Intent shareIntent = new Intent();
-            shareIntent.setType("text/plain");
             shareIntent.setAction(Intent.ACTION_SEND);
-
-            shareIntent.putExtra(AppConstants.TEXT_USER, tv_user.getText().toString());
+            shareIntent.setType("text/plain");
+           /* shareIntent.putExtra(AppConstants.TEXT_USER, tv_user.getText().toString());
             shareIntent.putExtra(AppConstants.TEXT_PASS, tv_pass.getText().toString());
             shareIntent.putExtra(AppConstants.TEXT_EMAIL, tv_email.getText().toString());
-            shareIntent.putExtra(AppConstants.TEXT_GENDER, tv_gender.getText().toString());
+            shareIntent.putExtra(AppConstants.TEXT_GENDER, tv_gender.getText().toString());*/
+
+            shareIntent.putExtra(Intent.EXTRA_TEXT,"Username: " + tv_user.getText().toString() + " " + "Password: " + tv_pass.getText().toString()
+                    + " " + "Email: " + tv_email.getText().toString() + " " + "Gender: " + tv_gender.getText().toString());
 
             startActivity(shareIntent);
         });

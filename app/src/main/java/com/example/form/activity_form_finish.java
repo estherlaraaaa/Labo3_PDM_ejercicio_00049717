@@ -7,27 +7,20 @@ import android.widget.TextView;
 
 public class activity_form_finish extends AppCompatActivity {
 
-    private TextView ff_useer, ff_pass, ff_email, ff_gender;
+    private TextView tv_information;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_finish);
 
-        ff_useer = findViewById(R.id.ff_user);
-        ff_pass = findViewById(R.id.ff_pass);
-        ff_email = findViewById(R.id.ff_email);
-        ff_gender = findViewById(R.id.ff_gender);
+        tv_information = findViewById(R.id.tv_information);
 
         Intent mIntent = getIntent();
 
         if (mIntent!=null){
 
-            ff_useer.setText(mIntent.getStringExtra(AppConstants.TEXT_USER));
-            ff_pass.setText(mIntent.getStringExtra(AppConstants.TEXT_PASS));
-            ff_email.setText(mIntent.getStringExtra(AppConstants.TEXT_EMAIL));
-            ff_gender.setText(mIntent.getStringExtra(AppConstants.TEXT_GENDER));
-
+            this.tv_information.setText(mIntent.getStringExtra(Intent.EXTRA_TEXT));
         }
 
     }
